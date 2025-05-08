@@ -1,0 +1,16 @@
+C:\Users\Kacper\source\repos\ProjektC#\bin\Debug\net8.0-windows\ProjektC#.exe
+C:\Users\Kacper\source\repos\ProjektC#\bin\Debug\net8.0-windows\ProjektC#.deps.json
+C:\Users\Kacper\source\repos\ProjektC#\bin\Debug\net8.0-windows\ProjektC#.runtimeconfig.json
+C:\Users\Kacper\source\repos\ProjektC#\bin\Debug\net8.0-windows\ProjektC#.dll
+C:\Users\Kacper\source\repos\ProjektC#\bin\Debug\net8.0-windows\ProjektC#.pdb
+C:\Users\Kacper\source\repos\ProjektC#\obj\Debug\net8.0-windows\ProjektC_.Form1.resources
+C:\Users\Kacper\source\repos\ProjektC#\obj\Debug\net8.0-windows\ProjektC#.csproj.GenerateResource.cache
+C:\Users\Kacper\source\repos\ProjektC#\obj\Debug\net8.0-windows\ProjektC#.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Kacper\source\repos\ProjektC#\obj\Debug\net8.0-windows\ProjektC#.AssemblyInfoInputs.cache
+C:\Users\Kacper\source\repos\ProjektC#\obj\Debug\net8.0-windows\ProjektC#.AssemblyInfo.cs
+C:\Users\Kacper\source\repos\ProjektC#\obj\Debug\net8.0-windows\ProjektC#.csproj.CoreCompileInputs.cache
+C:\Users\Kacper\source\repos\ProjektC#\obj\Debug\net8.0-windows\ProjektC#.dll
+C:\Users\Kacper\source\repos\ProjektC#\obj\Debug\net8.0-windows\refint\ProjektC#.dll
+C:\Users\Kacper\source\repos\ProjektC#\obj\Debug\net8.0-windows\ProjektC#.pdb
+C:\Users\Kacper\source\repos\ProjektC#\obj\Debug\net8.0-windows\ProjektC#.genruntimeconfig.cache
+C:\Users\Kacper\source\repos\ProjektC#\obj\Debug\net8.0-windows\ref\ProjektC#.dll
