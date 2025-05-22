@@ -1,21 +1,17 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Kacper\\source\\repos\\ProjektC#\\",
+  "WorkspaceRootPath": "C:\\Users\\Kacper\\source\\repos\\ProjektCS\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{79A46596-A04B-4701-B629-AA888B640F4F}|ProjektC#.csproj|c:\\users\\kacper\\source\\repos\\projektc#\\projektc#.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
-      "RelativeMoniker": "D:0:0:{79A46596-A04B-4701-B629-AA888B640F4F}|ProjektC#.csproj|solutionrelative:projektc#.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{79A46596-A04B-4701-B629-AA888B640F4F}|ProjektC#.csproj|c:\\users\\kacper\\source\\repos\\projektc#\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{79A46596-A04B-4701-B629-AA888B640F4F}|ProjektC#.csproj|c:\\users\\kacper\\source\\repos\\projektcs\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{79A46596-A04B-4701-B629-AA888B640F4F}|ProjektC#.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{79A46596-A04B-4701-B629-AA888B640F4F}|ProjektC#.csproj|c:\\users\\kacper\\source\\repos\\projektc#\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{79A46596-A04B-4701-B629-AA888B640F4F}|ProjektC#.csproj|c:\\users\\kacper\\source\\repos\\projektcs\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{79A46596-A04B-4701-B629-AA888B640F4F}|ProjektC#.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{79A46596-A04B-4701-B629-AA888B640F4F}|ProjektC#.csproj|c:\\users\\kacper\\source\\repos\\projektc#\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{79A46596-A04B-4701-B629-AA888B640F4F}|ProjektC#.csproj|c:\\users\\kacper\\source\\repos\\projektcs\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{79A46596-A04B-4701-B629-AA888B640F4F}|ProjektC#.csproj|solutionrelative:form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -26,54 +22,42 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ProjektC#",
-              "DocumentMoniker": "C:\\Users\\Kacper\\source\\repos\\ProjektC#\\ProjektC#.csproj",
-              "RelativeDocumentMoniker": "ProjektC#.csproj",
-              "ToolTip": "C:\\Users\\Kacper\\source\\repos\\ProjektC#\\ProjektC#.csproj",
-              "RelativeToolTip": "ProjektC#.csproj",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-05-08T09:01:30.606Z",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\Kacper\\source\\repos\\ProjektCS\\Form1.cs",
+              "RelativeDocumentMoniker": "Form1.cs",
+              "ToolTip": "C:\\Users\\Kacper\\source\\repos\\ProjektCS\\Form1.cs*",
+              "RelativeToolTip": "Form1.cs*",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAQwAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-08T09:07:55.867Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Form1.cs",
-              "DocumentMoniker": "C:\\Users\\Kacper\\source\\repos\\ProjektC#\\Form1.cs",
-              "RelativeDocumentMoniker": "Form1.cs",
-              "ToolTip": "C:\\Users\\Kacper\\source\\repos\\ProjektC#\\Form1.cs",
-              "RelativeToolTip": "Form1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAewA0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-08T08:34:06.352Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
               "Title": "Form1.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\Kacper\\source\\repos\\ProjektC#\\Form1.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Kacper\\source\\repos\\ProjektCS\\Form1.Designer.cs",
               "RelativeDocumentMoniker": "Form1.Designer.cs",
-              "ToolTip": "C:\\Users\\Kacper\\source\\repos\\ProjektC#\\Form1.Designer.cs",
-              "RelativeToolTip": "Form1.Designer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHoAAAAfAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\Kacper\\source\\repos\\ProjektCS\\Form1.Designer.cs*",
+              "RelativeToolTip": "Form1.Designer.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHsAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-08T08:29:25.989Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Form1.cs [Projekt]",
-              "DocumentMoniker": "C:\\Users\\Kacper\\source\\repos\\ProjektC#\\Form1.cs",
+              "DocumentMoniker": "C:\\Users\\Kacper\\source\\repos\\ProjektCS\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
-              "ToolTip": "C:\\Users\\Kacper\\source\\repos\\ProjektC#\\Form1.cs [Projekt]",
-              "RelativeToolTip": "Form1.cs [Projekt]",
+              "ToolTip": "C:\\Users\\Kacper\\source\\repos\\ProjektCS\\Form1.cs [Projekt]*",
+              "RelativeToolTip": "Form1.cs [Projekt]*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-08T07:54:53.059Z",
               "EditorCaption": " [Projekt]"
