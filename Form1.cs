@@ -1,3 +1,5 @@
+using ProjektCS;
+
 namespace ProjektC_
 {
     public partial class Form1 : Form
@@ -7,5 +9,11 @@ namespace ProjektC_
             InitializeComponent();
         }
 
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Form2 form2 = new Form2();
+
+            form2.Show();
+        }
     }
 }
