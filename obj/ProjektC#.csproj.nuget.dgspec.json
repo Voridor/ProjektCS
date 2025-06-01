@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Kacper\\source\\repos\\ProjektCS\\ProjektC#.csproj": {}
+    "C:\\Users\\Kacper\\GitHub\\ProjektCS\\ProjektC#.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Kacper\\source\\repos\\ProjektCS\\ProjektC#.csproj": {
+    "C:\\Users\\Kacper\\GitHub\\ProjektCS\\ProjektC#.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Kacper\\source\\repos\\ProjektCS\\ProjektC#.csproj",
+        "projectUniqueName": "C:\\Users\\Kacper\\GitHub\\ProjektCS\\ProjektC#.csproj",
         "projectName": "ProjektC#",
-        "projectPath": "C:\\Users\\Kacper\\source\\repos\\ProjektCS\\ProjektC#.csproj",
+        "projectPath": "C:\\Users\\Kacper\\GitHub\\ProjektCS\\ProjektC#.csproj",
         "packagesPath": "C:\\Users\\Kacper\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Kacper\\source\\repos\\ProjektCS\\obj\\",
+        "outputPath": "C:\\Users\\Kacper\\GitHub\\ProjektCS\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -44,11 +44,25 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.200"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[9.0.5, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[9.0.4, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -68,7 +82,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
