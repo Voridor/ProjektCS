@@ -1,8 +1,11 @@
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 using Npgsql.EntityFrameworkCore.PostgreSQL;
 using ProjektCS;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.IO;
+
 namespace ProjektC_
 {
     internal static class Program
@@ -12,35 +15,44 @@ namespace ProjektC_
         /// </summary>
         [STAThread]
         static void Main()
-        {   
-            using(var connection = new MyDbContext())
+        {
+            // Wczytaj konfiguracjê z pliku appsettings.json
+            var config = new ConfigurationBuilder()
+                .SetBasePath(Directory.GetCurrentDirectory())
+                .AddJsonFile("appsettings.json", optional: false)
+                .Build();
+
+            string connectionString = config.GetConnectionString("DefaultConnection");
+
+            using (var connection = new MyDbContext(connectionString))
             {
                 Console.WriteLine("Po³¹czenie z baz¹ danych zosta³o nawi¹zane.");
 
-
                 ApplicationConfiguration.Initialize();
                 Application.Run(new Form1(connection));
-                //Application.Run(new Form3());
-
             }
-            //optionsBu
         }
     }
+
     public class MyDbContext : DbContext
     {
-        string serverAddress = "localhost";
-        string dataBase = "ProjektCS";
-        string userId = "postgres";
-        string password = "1234";
+        private readonly string _connectionString;
+
+        public MyDbContext(string connectionString)
+        {
+            _connectionString = connectionString;
+        }
 
         public DbSet<Filmy> Film { get; set; }
-
+        public DbSet<Aktorzy> Aktorzy { get; set; }
+        public DbSet<Rezyserzy> Rezyserzy { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseNpgsql("Server="+serverAddress+";Database="+dataBase+";User ID="+userId+";Password="+password+";");
+            optionsBuilder.UseNpgsql(_connectionString);
         }
     }
+
     [Table("filmy")]
     public class Filmy
     {
@@ -59,7 +71,48 @@ namespace ProjektC_
 
         public string sciezkadoobrazu { get; set; }
 
+        public int aktor_id { get; set; } // Foreign key to Aktorzy
+
+        public int rezyser_id { get; set; } // Foreign key to Rezyserzy
+
+        public string sciezka_do_pliku { get; set; } // Œcie¿ka do pliku wideo
     }
 
+    [Table("aktorzy")]
+    public class Aktorzy
+    {
+        [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        public int id { get; set; }
 
+        [Required]
+        [MaxLength(200)]
+        public string imie { get; set; }
+
+        [Required]
+        [MaxLength(200)]
+        public string nazwisko { get; set; }
+
+        [Column(TypeName = "date")]
+        public DateTime data_urodzenia { get; set; }
+    }
+
+    [Table("rezyserzy")]
+    public class Rezyserzy
+    {
+        [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        public int id { get; set; }
+
+        [Required]
+        [MaxLength(200)]
+        public string imie { get; set; }
+
+        [Required]
+        [MaxLength(200)]
+        public string nazwisko { get; set; }
+
+        [Column(TypeName = "date")]
+        public DateTime data_urodzenia { get; set; }
+    }
 }

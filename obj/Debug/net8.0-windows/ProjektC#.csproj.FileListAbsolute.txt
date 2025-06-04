@@ -99,3 +99,13 @@ C:\Users\Kacper\GitHub\ProjektCS\bin\Debug\net8.0-windows\runtimes\browser\lib\n
 C:\Users\Kacper\GitHub\ProjektCS\obj\Debug\net8.0-windows\ProjektC#.csproj.AssemblyReference.cache
 C:\Users\Kacper\GitHub\ProjektCS\obj\Debug\net8.0-windows\ProjektC#.csproj.Up2Date
 C:\Users\Kacper\GitHub\ProjektCS\obj\Debug\net8.0-windows\ProjektCS.Form3.resources
+C:\Users\Kacper\GitHub\ProjektCS\obj\Debug\net8.0-windows\ProjektCS.Form4.resources
+C:\Users\Kacper\GitHub\ProjektCS\bin\Debug\net8.0-windows\Microsoft.Extensions.Configuration.dll
+C:\Users\Kacper\GitHub\ProjektCS\bin\Debug\net8.0-windows\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\Kacper\GitHub\ProjektCS\bin\Debug\net8.0-windows\Microsoft.Extensions.Configuration.FileExtensions.dll
+C:\Users\Kacper\GitHub\ProjektCS\bin\Debug\net8.0-windows\Microsoft.Extensions.Configuration.Json.dll
+C:\Users\Kacper\GitHub\ProjektCS\bin\Debug\net8.0-windows\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Users\Kacper\GitHub\ProjektCS\bin\Debug\net8.0-windows\Microsoft.Extensions.FileProviders.Physical.dll
+C:\Users\Kacper\GitHub\ProjektCS\bin\Debug\net8.0-windows\Microsoft.Extensions.FileSystemGlobbing.dll
+C:\Users\Kacper\GitHub\ProjektCS\bin\Debug\net8.0-windows\appsettings.json
+C:\Users\Kacper\GitHub\ProjektCS\bin\Debug\net8.0-windows\TagLibSharp.dll
