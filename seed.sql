@@ -1,6 +1,40 @@
+-- Tworzenie tabel
+
+CREATE TABLE aktorzy (
+    id SERIAL PRIMARY KEY,
+    imie VARCHAR(200) NOT NULL,
+    nazwisko VARCHAR(200) NOT NULL,
+    data_urodzenia DATE NOT NULL
+);
+
+CREATE TABLE rezyserzy (
+    id SERIAL PRIMARY KEY,
+    imie VARCHAR(200) NOT NULL,
+    nazwisko VARCHAR(200) NOT NULL,
+    data_urodzenia DATE NOT NULL
+);
+
+CREATE TABLE filmy (
+    id SERIAL PRIMARY KEY,
+    tytul VARCHAR(200) NOT NULL,
+    data_wydania DATE NOT NULL,
+    gatunki VARCHAR(200),
+    sciezkadoobrazu TEXT,
+    aktor_id INTEGER NOT NULL,
+    rezyser_id INTEGER NOT NULL,
+    sciezka_do_pliku TEXT,
+    CONSTRAINT fk_filmy_aktorzy FOREIGN KEY (aktor_id) REFERENCES aktorzy(id) ON DELETE CASCADE,
+    CONSTRAINT fk_filmy_rezyserzy FOREIGN KEY (rezyser_id) REFERENCES rezyserzy(id) ON DELETE CASCADE
+);
+
+CREATE INDEX IX_filmy_aktor_id ON filmy(aktor_id);
+CREATE INDEX IX_filmy_rezyser_id ON filmy(rezyser_id);
+
+-- Wstawianie danych
+
 -- Aktorzy
 INSERT INTO aktorzy (id, imie, nazwisko, data_urodzenia) VALUES
-(1, 'Robert', 'Wiêckiewicz', '1967-06-30'),
+(1, 'Robert', 'WiÄ™ckiewicz', '1967-06-30'),
 (2, 'Agnieszka', 'Grochowska', '1979-12-31'),
 (3, 'Borys', 'Szyc', '1978-09-04'),
 (4, 'Ryan', 'Reynolds', '1976-10-23'),
@@ -11,7 +45,7 @@ INSERT INTO aktorzy (id, imie, nazwisko, data_urodzenia) VALUES
 (9, 'Scarlett', 'Johansson', '1984-11-22'),
 (10, 'Brad', 'Pitt', '1963-12-18');
 
--- Re¿yserzy
+-- ReÅ¼yserzy
 INSERT INTO rezyserzy (id, imie, nazwisko, data_urodzenia) VALUES
 (1, 'Steven', 'Spielberg', '1946-12-18'),
 (2, 'Quentin', 'Tarantino', '1963-03-27'),
@@ -20,7 +54,7 @@ INSERT INTO rezyserzy (id, imie, nazwisko, data_urodzenia) VALUES
 (5, 'Christopher', 'Nolan', '1970-07-30'),
 (6, 'Patryk', 'Vega', '1977-01-02'),
 (7, 'Martin', 'Scorsese', '1942-11-17'),
-(8, 'W³adys³aw', 'Pasikowski', '1959-06-14'),
+(8, 'WÅ‚adysÅ‚aw', 'Pasikowski', '1959-06-14'),
 (9, 'James', 'Cameron', '1954-08-16'),
 (10, 'Juliusz', 'Machulski', '1955-03-10');
 
@@ -33,5 +67,5 @@ INSERT INTO filmy (id, tytul, data_wydania, gatunki, sciezkadoobrazu, aktor_id, 
 (5, 'Plan 9 From Outer Space', '1959-07-22', 'Sci-Fi', 'https://m.media-amazon.com/images/M/MV5BZGM4Y2MwMzktODg3MS00ZjVkLTk2NGMtY2Y0M2Y2MWQ0ZDBiXkEyXkFqcGc@._V1_SX300.jpg', 1, 2, NULL),
 (6, 'Pulp Fiction', '1994-10-14', 'Kryminalny, Dramat', 'https://m.media-amazon.com/images/M/MV5BYTViYTE3ZGQtNDBlMC00ZTAyLTkyODMtZGRiZDg0MjA2YThkXkEyXkFqcGc@._V1_SX300.jpg', 10, 2, NULL),
 (7, 'Lista Schindlera', '1993-12-15', 'Dramat, Historyczny', 'https://m.media-amazon.com/images/M/MV5BNjM1ZDQxYWUtMzQyZS00MTE1LWJmZGYtNGUyNTdlYjM3ZmVmXkEyXkFqcGc@._V1_SX300.jpg', 1, 1, NULL),
-(8, 'Diabe³ ubiera siê u Prady', '2006-06-30', 'Komedia', 'https://m.media-amazon.com/images/M/MV5BOWM3NTI3YWEtYjJmMy00M2U5LWI1NzEtZWM3ZDY2ZWNjOGRiXkEyXkFqcGc@._V1_SX300.jpg', 7, 3, NULL),
-(9, 'Avengers: Koniec gry', '2019-04-26', 'Akcja, Sci-Fi', 'https://m.media-amazon.com/images/M/MV5BMTc5MDE2ODcwNV5BMl5BanBnXkFtZTgwMzI2NzQ2NzM@._V1_SX300.jpg', 9, 9, NULL),
+(8, 'DiabeÅ‚ ubiera siÄ™ u Prady', '2006-06-30', 'Komedia', 'https://m.media-amazon.com/images/M/MV5BOWM3NTI3YWEtYjJmMy00M2U5LWI1NzEtZWM3ZDY2ZWNjOGRiXkEyXkFqcGc@._V1_SX300.jpg', 7, 3, NULL),
+(9, 'Avengers: Koniec gry', '2019-04-26', 'Akcja, Sci-Fi', 'https://m.media-amazon.com/images/M/MV5BMTc5MDE2ODcwNV5BMl5BanBnXkFtZTgwMzI2NzQ2NzM@._V1_SX300.jpg', 9, 9, NULL);

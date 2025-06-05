@@ -42,6 +42,7 @@
             aktoraToolStripMenuItem = new ToolStripMenuItem();
             reżyseraToolStripMenuItem = new ToolStripMenuItem();
             odświeżToolStripMenuItem = new ToolStripMenuItem();
+            usuńOstatnieToolStripMenuItem = new ToolStripMenuItem();
             tableLayoutPanel2.SuspendLayout();
             menuStrip1.SuspendLayout();
             SuspendLayout();
@@ -54,7 +55,7 @@
             tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
             tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
             tableLayoutPanel1.Location = new Point(2, 1);
-            tableLayoutPanel1.Margin = new Padding(2);
+            tableLayoutPanel1.Margin = new Padding(2, 3, 2, 3);
             tableLayoutPanel1.Name = "tableLayoutPanel1";
             tableLayoutPanel1.RowCount = 2;
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
@@ -73,22 +74,22 @@
             tableLayoutPanel2.Controls.Add(listBox1, 1, 1);
             tableLayoutPanel2.Controls.Add(flowLayoutPanel1, 0, 1);
             tableLayoutPanel2.Dock = DockStyle.Fill;
-            tableLayoutPanel2.Location = new Point(0, 24);
-            tableLayoutPanel2.Margin = new Padding(2);
+            tableLayoutPanel2.Location = new Point(0, 30);
+            tableLayoutPanel2.Margin = new Padding(2, 3, 2, 3);
             tableLayoutPanel2.Name = "tableLayoutPanel2";
             tableLayoutPanel2.RowCount = 2;
             tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Percent, 8.888889F));
             tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Percent, 91.1111145F));
-            tableLayoutPanel2.Size = new Size(1069, 625);
+            tableLayoutPanel2.Size = new Size(1222, 835);
             tableLayoutPanel2.TabIndex = 1;
             // 
             // textBox1
             // 
             textBox1.Dock = DockStyle.Fill;
-            textBox1.Location = new Point(2, 2);
-            textBox1.Margin = new Padding(2);
+            textBox1.Location = new Point(2, 3);
+            textBox1.Margin = new Padding(2, 3, 2, 3);
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(865, 23);
+            textBox1.Size = new Size(990, 27);
             textBox1.TabIndex = 0;
             // 
             // button1
@@ -96,11 +97,11 @@
             button1.AutoSize = true;
             button1.AutoSizeMode = AutoSizeMode.GrowAndShrink;
             button1.Dock = DockStyle.Top;
-            button1.Location = new Point(871, 2);
-            button1.Margin = new Padding(2);
-            button1.MinimumSize = new Size(0, 20);
+            button1.Location = new Point(996, 3);
+            button1.Margin = new Padding(2, 3, 2, 3);
+            button1.MinimumSize = new Size(0, 27);
             button1.Name = "button1";
-            button1.Size = new Size(196, 25);
+            button1.Size = new Size(224, 30);
             button1.TabIndex = 1;
             button1.Text = "Szukaj";
             button1.UseVisualStyleBackColor = true;
@@ -110,21 +111,20 @@
             // 
             listBox1.Dock = DockStyle.Top;
             listBox1.FormattingEnabled = true;
-            listBox1.ItemHeight = 15;
             listBox1.Items.AddRange(new object[] { "Nazwa", "Reżyser", "Aktor", "Data wydania", "Gatunek" });
-            listBox1.Location = new Point(871, 57);
-            listBox1.Margin = new Padding(2);
+            listBox1.Location = new Point(996, 77);
+            listBox1.Margin = new Padding(2, 3, 2, 3);
             listBox1.Name = "listBox1";
-            listBox1.Size = new Size(196, 79);
+            listBox1.Size = new Size(224, 104);
             listBox1.TabIndex = 2;
             // 
             // flowLayoutPanel1
             // 
             flowLayoutPanel1.Dock = DockStyle.Fill;
-            flowLayoutPanel1.Location = new Point(2, 57);
-            flowLayoutPanel1.Margin = new Padding(2);
+            flowLayoutPanel1.Location = new Point(2, 77);
+            flowLayoutPanel1.Margin = new Padding(2, 3, 2, 3);
             flowLayoutPanel1.Name = "flowLayoutPanel1";
-            flowLayoutPanel1.Size = new Size(865, 566);
+            flowLayoutPanel1.Size = new Size(990, 755);
             flowLayoutPanel1.TabIndex = 3;
             flowLayoutPanel1.Paint += flowLayoutPanel1_Paint;
             // 
@@ -136,10 +136,12 @@
             // 
             // menuStrip1
             // 
-            menuStrip1.Items.AddRange(new ToolStripItem[] { dodajToolStripMenuItem, odświeżToolStripMenuItem });
+            menuStrip1.ImageScalingSize = new Size(20, 20);
+            menuStrip1.Items.AddRange(new ToolStripItem[] { dodajToolStripMenuItem, odświeżToolStripMenuItem, usuńOstatnieToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
-            menuStrip1.Size = new Size(1069, 24);
+            menuStrip1.Padding = new Padding(7, 3, 0, 3);
+            menuStrip1.Size = new Size(1222, 30);
             menuStrip1.TabIndex = 2;
             menuStrip1.Text = "menuStrip1";
             // 
@@ -147,46 +149,54 @@
             // 
             dodajToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { fIlmToolStripMenuItem, aktoraToolStripMenuItem, reżyseraToolStripMenuItem });
             dodajToolStripMenuItem.Name = "dodajToolStripMenuItem";
-            dodajToolStripMenuItem.Size = new Size(50, 20);
+            dodajToolStripMenuItem.Size = new Size(64, 24);
             dodajToolStripMenuItem.Text = "Dodaj";
             // 
             // fIlmToolStripMenuItem
             // 
             fIlmToolStripMenuItem.Name = "fIlmToolStripMenuItem";
-            fIlmToolStripMenuItem.Size = new Size(119, 22);
+            fIlmToolStripMenuItem.Size = new Size(150, 26);
             fIlmToolStripMenuItem.Text = "FIlm";
             fIlmToolStripMenuItem.Click += fIlmToolStripMenuItem_Click;
             // 
             // aktoraToolStripMenuItem
             // 
             aktoraToolStripMenuItem.Name = "aktoraToolStripMenuItem";
-            aktoraToolStripMenuItem.Size = new Size(119, 22);
+            aktoraToolStripMenuItem.Size = new Size(150, 26);
             aktoraToolStripMenuItem.Text = "Aktora";
+            aktoraToolStripMenuItem.Click += aktoraToolStripMenuItem_Click_1;
             // 
             // reżyseraToolStripMenuItem
             // 
             reżyseraToolStripMenuItem.Name = "reżyseraToolStripMenuItem";
-            reżyseraToolStripMenuItem.Size = new Size(119, 22);
+            reżyseraToolStripMenuItem.Size = new Size(150, 26);
             reżyseraToolStripMenuItem.Text = "Reżysera";
             reżyseraToolStripMenuItem.Click += reżyseraToolStripMenuItem_Click;
             // 
             // odświeżToolStripMenuItem
             // 
             odświeżToolStripMenuItem.Name = "odświeżToolStripMenuItem";
-            odświeżToolStripMenuItem.Size = new Size(63, 20);
+            odświeżToolStripMenuItem.Size = new Size(79, 24);
             odświeżToolStripMenuItem.Text = "Odśwież";
             odświeżToolStripMenuItem.Click += odświeżToolStripMenuItem_Click;
             // 
+            // usuńOstatnieToolStripMenuItem
+            // 
+            usuńOstatnieToolStripMenuItem.Name = "usuńOstatnieToolStripMenuItem";
+            usuńOstatnieToolStripMenuItem.Size = new Size(112, 24);
+            usuńOstatnieToolStripMenuItem.Text = "Usuń ostatnie";
+            usuńOstatnieToolStripMenuItem.Click += usuńOstatnieToolStripMenuItem_Click;
+            // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1069, 649);
+            ClientSize = new Size(1222, 865);
             Controls.Add(tableLayoutPanel2);
             Controls.Add(tableLayoutPanel1);
             Controls.Add(menuStrip1);
             MainMenuStrip = menuStrip1;
-            Margin = new Padding(2);
+            Margin = new Padding(2, 3, 2, 3);
             Name = "Form1";
             Text = "Form1";
             tableLayoutPanel2.ResumeLayout(false);
@@ -212,5 +222,6 @@
         private ToolStripMenuItem reżyseraToolStripMenuItem;
         private ToolStripMenuItem fIlmToolStripMenuItem;
         private ToolStripMenuItem odświeżToolStripMenuItem;
+        private ToolStripMenuItem usuńOstatnieToolStripMenuItem;
     }
 }

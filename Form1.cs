@@ -1,5 +1,6 @@
 using Microsoft.Extensions.Configuration;
 using ProjektCS;
+using ProjektCS.Migrations;
 using System.Windows.Forms;
 using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Database;
 
@@ -12,7 +13,7 @@ namespace ProjektC_
         public Form1(MyDbContext connection)
         {
             InitializeComponent();
-
+            connectionF = connection;
             flowLayoutPanel1.AutoScroll = true; // <-- Dodaj tê liniê
 
             var filmy = connection.Film.ToList();
@@ -243,6 +244,17 @@ namespace ProjektC_
                 }
             }
             await Task.WhenAll(tasks);
+        }
+
+        private void aktoraToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            var form4 = new Form4(connectionF, "re¿yser");
+            form4.Show();
+        }
+
+        private void usuñOstatnieToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            connectionF.Film.RemoveRange(connectionF.Film.OrderByDescending(f => f.id).Take(connectionF.Film.ToList().Count));
         }
     }
 }

@@ -57,6 +57,7 @@ namespace ProjektC_
     public class Filmy
     {
         [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int id { get; set; }
 
         [Required]
